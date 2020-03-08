@@ -12,7 +12,7 @@
   "dependencies": {
     "next": "9.2.2",
     "react": "16.13.0",
-    "react-bricks": "^1.0.41",
+    "react-bricks": "^1.0.42",
     "react-dom": "16.13.0"
   },
   "devDependencies": {
