@@ -1,4 +1,4 @@
-import { PageViewer, fetchPage, cleanPage } from 'react-bricks'
+import { PageViewer, fetchPage, fetchPages, cleanPage } from 'react-bricks'
 import Head from 'next/head'
 
 import config from '../react-bricks/config'
@@ -20,10 +20,20 @@ const Page = ({ page }) => {
   )
 }
 
-export default Page
-
-Page.getInitialProps = async ctx => {
-  const { slug } = ctx.query
+export async function getStaticProps(context) {
+  const { slug } = context.params
   const page = await fetchPage(slug.toString(), config.apiKey)
-  return { page }
+  return { props: { page } }
 }
+
+export async function getStaticPaths() {
+  const allPages = await fetchPages(config.apiKey)
+
+  const paths = allPages.map(page => ({
+    params: { slug: page.slug }
+  }))
+
+  return { paths, fallback: false }
+}
+
+export default Page

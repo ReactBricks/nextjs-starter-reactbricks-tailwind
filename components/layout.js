@@ -6,14 +6,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 896,
-        }}
-      >
+      <div className="max-w-4xl mx-auto">
         <main className="content">{children}</main>
-        <footer style={{ borderTop: '1px solid #cbd5e0', paddingTop: 10, paddingBottom: 20 }}>
+        <footer className="border-t border-gray-400 pt-3 pb-5">
           © {new Date().getFullYear()}{' '}
           <a href="https://www.reactbricks.com">React Bricks</a>, built with
           {` `}

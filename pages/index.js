@@ -20,9 +20,9 @@ const Home = ({ page }) => {
   )
 }
 
-export default Home
-
-Home.getInitialProps = async ctx => {
+export async function getStaticProps() {
   const page = await fetchPage('home', config.apiKey)
-  return { page }
+  return { props: { page } }
 }
+
+export default Home

@@ -9,7 +9,7 @@ import BlockNames from '../BlockNames'
 //=============================
 const Padding = Object.freeze({
   Big: 'BIG',
-  Small: 'SMALL',
+  Small: 'SMALL'
 })
 
 //=============================
@@ -50,9 +50,13 @@ const HeroUnit = ({ title, text, padding, onChange }) => {
           types.RichTextFeatures.Italic,
           types.RichTextFeatures.Highlight,
           types.RichTextFeatures.Code,
-          types.RichTextFeatures.Link,
+          types.RichTextFeatures.Link
         ]}
-        renderBold={props => <b className="text-red-500">{props.children}</b>}
+        renderCode={props => (
+          <code className="text-sm py-1 px-2 bg-gray-200 rounded">
+            {props.children}
+          </code>
+        )}
       />
     </div>
   )
@@ -66,7 +70,7 @@ const getDefaultProps = () => ({
   title: Plain.deserialize('We develop beautiful web applications'),
   text: Plain.deserialize(
     "We are a hi-tech web development company committed to deliver great products on time. We love to understand our customers' needs and exceed expectations."
-  ),
+  )
 })
 
 //=============================
@@ -81,10 +85,10 @@ const sideEditProps = [
       display: types.OptionsDisplay.Select,
       options: [
         { value: Padding.Big, label: 'Big Padding' },
-        { value: Padding.Small, label: 'Small Padding' },
-      ],
-    },
-  },
+        { value: Padding.Small, label: 'Small Padding' }
+      ]
+    }
+  }
 ]
 
 //=============================
@@ -97,7 +101,7 @@ const schema = {
   render: props => <HeroUnit {...props} />,
   getDefaultProps,
   sideEditProps,
-  textEditProps: ['title', 'text'],
+  textEditProps: ['title', 'text']
 }
 
 export default schema

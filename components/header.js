@@ -2,54 +2,21 @@ import Link from 'next/link'
 import React from 'react'
 
 const Header = () => (
-  <header
-    style={{
-      paddingTop: '2rem',
-      paddingBottom: '2rem'
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 896
-      }}
-    >
-      <div
-        style={{
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center'
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <img src="/reactbricks-icon.svg" style={{ width: 40 }} alt="React Bricks" />
-          <img
-            src="/nextjs.svg"
-            style={{ width: 65, marginLeft: '1rem' }}
-            alt="Next.js"
-          />
-          <h1
-            style={{
-              fontSize: '1.25rem',
-              marginLeft: '1rem'
-            }}
-          >
+  <header className="pt-8">
+    <div className="max-w-4xl mx-auto px-6">
+      <div className="w-full flex flex-col sm:flex-row justify-center sm:justify-between items-center">
+        <div className="flex flex-col sm:flex-row items-center mb-4 sm:mb-0">
+          <div className="flex flex-row items-center mb-5 sm:mb-0">
+            <img src="/reactbricks-icon.svg" className="w-10" alt="React Bricks" />
+            <img src="/nextjs.svg" className="w-16 ml-4" alt="Next.js" />
+          </div>
+          <h1 className="ml-4 text-xl text-center">
             <Link href="/">
-              <a
-                style={{
-                  color: `#2d3748`
-                }}
-              >
-                React Bricks + Next.js
-              </a>
+              <a className="text-gray-800 hover:text-pink-700">React Bricks + Next.js + Tailwind</a>
             </Link>
           </h1>
         </div>
-        <Link href="/admin">
-          <a>Admin Dashboard &raquo;</a>
-        </Link>
+        <Link href="/admin"><a>Admin Dashboard &raquo;</a></Link>
       </div>
     </div>
   </header>
