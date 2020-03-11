@@ -2,7 +2,7 @@ import { PageViewer, fetchPage, cleanPage } from 'react-bricks'
 import Head from 'next/head'
 
 import config from '../react-bricks/config'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 const Home = ({ page }) => {
   // Clean the received content
