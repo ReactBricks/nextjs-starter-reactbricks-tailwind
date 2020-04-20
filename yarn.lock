@@ -4626,10 +4626,10 @@ rc-switch@^1.9.0:
     prop-types "^15.5.6"
     react-lifecycles-compat "^3.0.4"
 
-react-bricks@^1.0.55:
-  version "1.0.55"
-  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-1.0.55.tgz#113a0f4670c9cc3127ee92bc75d93d686d2bf6a0"
-  integrity sha512-X1N0s3ppWonrFmkBoHwADb43wGJ7FZK0JIv9TNpOfEevi3ddMEX9c2WD/oBvkHBZ/z0xj/khxLshWtsOdpGyzw==
+react-bricks@^1.0.56:
+  version "1.0.56"
+  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-1.0.56.tgz#a8086aeba9e0d13b8024629339b48dbf30f937a3"
+  integrity sha512-Zf4/RmLDxjyiFJyNNohmvSX/R8npLkTtbW56xto0NNChzTd0SCK6uHyraFcvO6cltDrTmUsXGfJeY3kxuKMXvQ==
   dependencies:
     classnames "^2.2.6"
     cogo-toast "^4.2.3"
