@@ -1,8 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import Router, { useRouter } from 'next/router'
-import pageTypeSchema from './pageTypeSchema'
-import blockTypeSchema from './bricks'
+//import bricks from 'react-bricks-ui'
+
+import bricks from './bricks'
+import pageTypes from './pageTypes'
 import { appId, apiKey } from '../credentials.config'
 
 const MyLink = ({
@@ -10,7 +12,7 @@ const MyLink = ({
   children,
   className,
   activeClassName,
-  isAdminHeader = true
+  isAdminHeader = true,
 }) => {
   const router = useRouter()
 
@@ -39,12 +41,13 @@ const MyLink = ({
 const config = {
   appId,
   apiKey,
-  pageTypeSchema,
-  blockTypeSchema,
+  pageTypes,
+  bricks,
   logo: '/logo.svg',
   contentClassName: 'content',
   renderLocalLink: MyLink,
-  navigate: path => Router.push(path)
+  navigate: (path) => Router.push(path),
+  appRootElement: '#__next',
 }
 
 export default config

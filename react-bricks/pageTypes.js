@@ -1,6 +1,6 @@
 import { types } from 'react-bricks'
 
-const pageTypeSchema = [
+const pageTypes = [
   {
     name: 'page',
     pluralName: 'pages',
@@ -10,4 +10,4 @@ const pageTypeSchema = [
   },
 ]
 
-export default pageTypeSchema
+export default pageTypes

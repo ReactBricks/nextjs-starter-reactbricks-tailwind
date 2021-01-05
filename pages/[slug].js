@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 const Page = ({ page }) => {
   // Clean the received content
   // Removes unknown or not allowed bricks
-  const pageOk = cleanPage(page, config.pageTypeSchema, config.blockTypeSchema)
+  const pageOk = cleanPage(page, config.pageTypes, config.bricks)
 
   return (
     <Layout>

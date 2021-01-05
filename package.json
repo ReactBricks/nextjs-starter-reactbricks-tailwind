@@ -10,15 +10,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "9.4.4",
-    "react": "16.13.1",
-    "react-bricks": "^1.0.58",
-    "react-dom": "16.13.1"
+    "next": "10.0.4",
+    "react": "17.0.1",
+    "react-bricks": "2.0.0-beta.13",
+    "react-bricks-ui": "^0.1.3",
+    "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.2.0",
-    "autoprefixer": "^9.8.0",
-    "postcss-import": "^12.0.1",
-    "tailwindcss": "^1.4.6"
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.2",
+    "tailwindcss": "^2.0.2"
   }
 }
