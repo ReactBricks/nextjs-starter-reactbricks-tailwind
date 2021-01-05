@@ -1,11 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
 import Router, { useRouter } from 'next/router'
-//import bricks from 'react-bricks-ui'
+import uiBricks from 'react-bricks-ui'
 
-import bricks from './bricks'
+import myBricks from './bricks'
 import pageTypes from './pageTypes'
 import { appId, apiKey } from '../credentials.config'
+
+// React Bricks UI + Custom Bricks
+const bricks = [
+  ...uiBricks,
+  ...myBricks
+]
 
 const MyLink = ({
   href,

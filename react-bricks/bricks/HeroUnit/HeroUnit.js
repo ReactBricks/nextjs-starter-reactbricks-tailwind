@@ -63,7 +63,7 @@ const HeroUnit = ({ padding }) => {
 //=============================
 const getDefaultProps = () => ({
   padding: Padding.Big,
-  title: Plain.deserialize('We develop beautiful web applications'),
+  title: Plain.deserialize('This is a custom Hero Unit'),
   text: Plain.deserialize(
     "We are a hi-tech web development company committed to deliver great products on time. We love to understand our customers' needs and exceed expectations."
   ),
@@ -92,7 +92,7 @@ const sideEditProps = [
 //=============================
 HeroUnit.schema = {
   name: BlockNames.HeroUnit,
-  label: 'Hero Unit',
+  label: 'Custom Hero Unit',
   getDefaultProps,
   sideEditProps,
 }

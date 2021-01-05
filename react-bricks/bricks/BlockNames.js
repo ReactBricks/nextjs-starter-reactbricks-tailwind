@@ -1,5 +1,5 @@
 const BlockNames = Object.freeze({
-  HeroUnit: 'hero-unit',
+  HeroUnit: 'my-hero-unit',
 })
 
 export default BlockNames
