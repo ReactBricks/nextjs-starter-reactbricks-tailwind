@@ -1,4 +1,10 @@
-import { PageViewer, fetchPage, cleanPage } from 'react-bricks'
+import { useContext } from 'react'
+import {
+  ReactBricksContext,
+  PageViewer,
+  fetchPage,
+  cleanPage,
+} from 'react-bricks'
 import Head from 'next/head'
 
 import config from '../react-bricks/config'
@@ -7,9 +13,10 @@ import Layout from '../components/layout'
 const Home = ({ page }) => {
   // Clean the received content
   // Removes unknown or not allowed bricks
-  const pageOk = cleanPage(page, config.pageTypes, config.bricks)
+  const { pageTypes, bricks } = useContext(ReactBricksContext)
+  const pageOk = cleanPage(page, pageTypes, bricks)
 
-  console.log(page, config.bricks, pageOk)
+  //console.log(page, config.bricks, pageOk)
 
   return (
     <Layout>
