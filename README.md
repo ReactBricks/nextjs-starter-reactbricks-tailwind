@@ -5,7 +5,7 @@ Kick-start your project with this boilerplate for a complete Next.js website bas
 ## 🚀 Quick start
 
 ```bash
-git clone your-project https://github.com/reactbricks/nextjs-starter-reactbricks-tailwind
+git clone https://github.com/reactbricks/nextjs-starter-reactbricks-tailwind your-project
 ```
 
 ## 📖 Documentation
