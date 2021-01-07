@@ -1,5 +1,10 @@
 module.exports = {
-  //purge: [],
+  purge: [
+    './pages/**/*.js',
+    './components/**/*.js',
+    './react-bricks/**/*.js',
+    './node_modules/react-bricks-ui/dist/*.js',
+  ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
@@ -59,7 +64,7 @@ module.exports = {
         '1/10': '10%',
       },
       opacity: {
-        '10': '0.1',
+        10: '0.1',
       },
       fontFamily: {
         content: [
