@@ -7,8 +7,9 @@ import {
   cleanPage,
 } from 'react-bricks'
 import Head from 'next/head'
+import { GetStaticProps, GetStaticPaths } from 'next'
 
-import config from '../react-bricks/config'
+import config from '../react-bricks-config/config'
 import Layout from '../components/layout'
 
 const Page = ({ page }) => {
@@ -28,13 +29,20 @@ const Page = ({ page }) => {
   )
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context) => {
+  if (!config.apiKey) {
+    return { props: { error: 'NOKEYS' } }
+  }
   const { slug } = context.params
   const page = await fetchPage(slug.toString(), config.apiKey)
   return { props: { page } }
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
+  if (!config.apiKey) {
+    return { paths: [], fallback: false }
+  }
+
   const allPages = await fetchPages(config.apiKey)
 
   const paths = allPages.map((page) => ({

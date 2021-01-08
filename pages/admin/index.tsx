@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { Admin, Login } from 'react-bricks'
 
-const AdminLogin = () => {
+const AdminLogin: React.FC = () => {
   return (
     <Admin isLogin>
       <Head>

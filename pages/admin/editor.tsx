@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { Admin, Editor } from 'react-bricks'
 
-const AdminEditor = () => {
+const AdminEditor: React.FC = () => {
   return (
     <Admin>
       <Head>

@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { Admin, Playground } from 'react-bricks'
 
-const AdminPlayground = () => {
+const AdminPlayground: React.FC = () => {
   return (
     <Admin>
       <Head>

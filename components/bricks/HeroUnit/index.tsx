@@ -1,32 +1,30 @@
 import React from 'react'
-import classNames from 'classnames'
 import { Text, RichText, Plain, types } from 'react-bricks'
 
-import BlockNames from '../BlockNames'
+//=============================
+// Local Types
+//=============================
+type Padding = 'big' | 'small'
 
-//=============================
-// Padding enum
-//=============================
-const Padding = Object.freeze({
-  Big: 'BIG',
-  Small: 'SMALL',
-})
+interface HeroUnitProps {
+  padding: Padding
+  title: string
+  text: string
+}
 
 //=============================
 // Component to be rendered
 //=============================
-const HeroUnit = ({ padding }) => {
+const HeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
   return (
     <div
-      className={classNames(
-        'max-w-xl mx-auto px-6',
-        { 'py-12': padding === Padding.Small },
-        { 'py-20': padding === Padding.Big }
-      )}
+      className={`max-w-xl mx-auto px-6 ${
+        padding === 'big' ? 'py-20' : 'py-12'
+      }`}
     >
       <Text
         renderBlock={(props) => (
-          <h1 className="text-3xl sm:text-4xl text-center font-black text-gray-800 leading-tight mb-3">
+          <h1 className="text-3xl sm:text-4xl text-center font-black text-gray-900 dark:text-white leading-tight mb-3">
             {props.children}
           </h1>
         )}
@@ -35,7 +33,7 @@ const HeroUnit = ({ padding }) => {
       />
       <RichText
         renderBlock={(props) => (
-          <p className="text-xl text-center leading-relaxed text-gray-700">
+          <p className="text-xl text-center leading-relaxed text-gray-700 dark:text-gray-100">
             {props.children}
           </p>
         )}
@@ -49,7 +47,7 @@ const HeroUnit = ({ padding }) => {
           types.RichTextFeatures.Link,
         ]}
         renderCode={(props) => (
-          <code className="text-sm py-1 px-2 bg-gray-200 rounded">
+          <code className="text-sm py-1 px-2 bg-gray-200 dark:bg-gray-700 rounded">
             {props.children}
           </code>
         )}
@@ -61,8 +59,8 @@ const HeroUnit = ({ padding }) => {
 //=============================
 // Default Props
 //=============================
-const getDefaultProps = () => ({
-  padding: Padding.Big,
+const getDefaultProps = (): HeroUnitProps => ({
+  padding: 'big',
   title: Plain.deserialize('This is a custom Hero Unit'),
   text: Plain.deserialize(
     "We are a hi-tech web development company committed to deliver great products on time. We love to understand our customers' needs and exceed expectations."
@@ -72,7 +70,7 @@ const getDefaultProps = () => ({
 //=============================
 // Side Edit Props
 //=============================
-const sideEditProps = [
+const sideEditProps: (types.ISideEditProp | types.ISideGroup)[] = [
   {
     name: 'padding',
     label: 'Padding',
@@ -80,8 +78,8 @@ const sideEditProps = [
     selectOptions: {
       display: types.OptionsDisplay.Select,
       options: [
-        { value: Padding.Big, label: 'Big Padding' },
-        { value: Padding.Small, label: 'Small Padding' },
+        { value: 'big', label: 'Big Padding' },
+        { value: 'small', label: 'Small Padding' },
       ],
     },
   },
@@ -91,7 +89,7 @@ const sideEditProps = [
 // Block Schema
 //=============================
 HeroUnit.schema = {
-  name: BlockNames.HeroUnit,
+  name: 'my-hero-unit',
   label: 'Custom Hero Unit',
   getDefaultProps,
   sideEditProps,

@@ -1,6 +1,6 @@
 import { types } from 'react-bricks'
 
-const pageTypes = [
+const pageTypes: types.IPageType[] = [
   {
     name: 'page',
     pluralName: 'pages',
