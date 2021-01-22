@@ -9,7 +9,7 @@ import {
 import Head from 'next/head'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
-import config from '../react-bricks-config/config'
+import config from '../react-bricks/config'
 import Layout from '../components/layout'
 
 const Page = ({ page }) => {

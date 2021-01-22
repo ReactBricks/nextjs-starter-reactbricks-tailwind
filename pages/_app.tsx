@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ReactBricks } from 'react-bricks'
 import type { AppProps } from 'next/app'
-import config from '../react-bricks-config/config'
+import config from '../react-bricks/config'
 
 import '../css/style.css'
 
@@ -27,7 +27,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   return (
     <ReactBricks {...reactBricksConfig}>
-      
       <Component {...pageProps} />
     </ReactBricks>
   )

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const Header: React.FC = () => (
-  <header className="bg-white py-4 border-b sticky top-0">
+  <header className="bg-white h-20 py-5 border-b sticky top-0">
     <div className="max-w-5xl mx-auto px-6">
       <div className="w-full flex flex-col sm:flex-row justify-center sm:justify-between items-center">
         <div className="flex flex-col sm:flex-row items-center mb-4 sm:mb-0">

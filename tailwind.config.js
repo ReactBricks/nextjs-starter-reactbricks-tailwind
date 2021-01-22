@@ -1,8 +1,7 @@
 module.exports = {
   purge: [
-    './pages/**/*.js',
-    './components/**/*.js',
-    './react-bricks/**/*.js',
+    './pages/**/*.tsx',
+    './components/**/*.tsx',
     './node_modules/react-bricks-ui/dist/*.js',
   ],
   darkMode: 'class', // or 'media' or 'class'

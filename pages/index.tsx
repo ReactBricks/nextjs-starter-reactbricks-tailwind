@@ -8,7 +8,7 @@ import {
 import Head from 'next/head'
 import { GetStaticProps } from 'next'
 
-import config from '../react-bricks-config/config'
+import config from '../react-bricks/config'
 import Layout from '../components/layout'
 import ErrorNoKeys from '../components/errorNoKeys'
 import ErrorNoHomePage from '../components/errorNoHomePage'
@@ -45,7 +45,7 @@ export const getStaticProps: GetStaticProps = async () => {
     return { props: { error: 'NOKEYS' } }
   }
   try {
-    const page = await fetchPage('home', config.apiKey)
+    const page = await fetchPage('homse', config.apiKey)
     return { props: { page } }
   } catch {
     return { props: { error: 'NOPAGE' } }

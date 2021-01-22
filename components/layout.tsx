@@ -5,9 +5,9 @@ import Footer from './footer'
 
 const Layout: React.FC = ({ children }) => {
   return (
-    <div className="antialiased">
+    <div className="flex flex-col h-screen justify-between antialiased">
       <Header />
-      <main>{children}</main>
+      <main className="mb-auto">{children}</main>
       <Footer />
     </div>
   )
