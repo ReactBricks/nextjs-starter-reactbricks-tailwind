@@ -45,7 +45,7 @@ export const getStaticProps: GetStaticProps = async () => {
     return { props: { error: 'NOKEYS' } }
   }
   try {
-    const page = await fetchPage('homse', config.apiKey)
+    const page = await fetchPage('home', config.apiKey)
     return { props: { page } }
   } catch {
     return { props: { error: 'NOPAGE' } }
