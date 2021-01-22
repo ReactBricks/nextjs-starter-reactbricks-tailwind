@@ -4,6 +4,7 @@ import {
   PageViewer,
   fetchPage,
   cleanPage,
+  types
 } from 'react-bricks'
 import Head from 'next/head'
 import { GetStaticProps } from 'next'
@@ -13,12 +14,16 @@ import Layout from '../components/layout'
 import ErrorNoKeys from '../components/errorNoKeys'
 import ErrorNoHomePage from '../components/errorNoHomePage'
 
-const Home = ({ page, error }) => {
+interface HomeProps {
+  page: types.Page,
+  error: string
+}
+
+const Home: React.FC<HomeProps> = ({ page, error }) => {
   // Clean the received content
   // Removes unknown or not allowed bricks
   const { pageTypes, bricks } = useContext(ReactBricksContext)
 
-  // TODO-TS: cleanPage better IN / OUT typings
   const pageOk = page ? cleanPage(page, pageTypes, bricks) : null
 
   return (
@@ -37,8 +42,6 @@ const Home = ({ page, error }) => {
     </Layout>
   )
 }
-
-// TODO-TS fetchPage, fetchPages, usePage etc. should return a typed result
 
 export const getStaticProps: GetStaticProps = async () => {
   if (!config.apiKey) {

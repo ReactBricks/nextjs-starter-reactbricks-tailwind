@@ -1,4 +1,3 @@
-
 import Router from 'next/router'
 import { types } from 'react-bricks'
 
@@ -6,8 +5,7 @@ import bricks from './bricks'
 import pageTypes from './pageTypes'
 import NextLink from './NextLink'
 
-// TODO-TS: types.ReactBricksConfig
-const config = {
+const config: types.ReactBricksConfig = {
   appId: process.env.NEXT_PUBLIC_APP_ID,
   apiKey: process.env.API_KEY,
   pageTypes,
