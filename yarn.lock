@@ -3548,10 +3548,10 @@ react-bricks-ui@^0.1.3:
     react-icons "^4.1.0"
     react-leaflet "^3.0.2"
 
-react-bricks@2.0.0-beta.18:
-  version "2.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-2.0.0-beta.18.tgz#a3329a08a7bf8e32af9f4d7e7cf3bbe52297e0d7"
-  integrity sha512-G7W5fqD5pN63YSTKS2d5WxL8mtQIYj0KnWzANXt3nVbSw3DYEaqQd5WS8l8SGWadTRXxctYHClNS5B0wfb9qWw==
+react-bricks@2.0.0-beta.19:
+  version "2.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-2.0.0-beta.19.tgz#d9a1215658a2821fdc5f1fa7432be7e3d1e78a9c"
+  integrity sha512-FTJS4HQEnPFCTLbYBPiHedsaRufg1QZAdUFKi1qZIs19iCRGV+aOrh94axWIK1Nq20LZ0DYLE2QYzxaqpo+c+w==
   dependencies:
     "@tippyjs/react" "^4.2.0"
     axios "^0.20.0"
