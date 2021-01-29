@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, RichText, Plain, types } from 'react-bricks'
+import { Text, RichText, Image, types } from 'react-bricks'
 
 //=============================
 // Local Types
@@ -15,13 +15,14 @@ interface HeroUnitProps {
 //=============================
 // Component to be rendered
 //=============================
-const HeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
+const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
   return (
     <div
       className={`max-w-xl mx-auto px-6 ${
         padding === 'big' ? 'py-20' : 'py-12'
       }`}
     >
+      <Image propName="icon" alt="Icon" imageClassName="w-32" />
       <Text
         renderBlock={(props) => (
           <h1 className="text-3xl sm:text-4xl text-center font-black text-gray-900 dark:text-white leading-tight mb-3">
@@ -61,10 +62,9 @@ const HeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
 //=============================
 const getDefaultProps = (): HeroUnitProps => ({
   padding: 'big',
-  title: Plain.deserialize('This is a custom Hero Unit'),
-  text: Plain.deserialize(
-    "We are a hi-tech web development company committed to deliver great products on time. We love to understand our customers' needs and exceed expectations."
-  ),
+  title: 'This is a custom Hero Unit',
+  text:
+    "We are a hi-tech web development company committed to deliver great products on time. We love to understand our customers' needs and exceed expectations.",
 })
 
 //=============================
@@ -88,11 +88,11 @@ const sideEditProps: (types.ISideEditProp | types.ISideGroup)[] = [
 //=============================
 // Block Schema
 //=============================
-HeroUnit.schema = {
+MyHeroUnit.schema = {
   name: 'my-hero-unit',
   label: 'Custom Hero Unit',
   getDefaultProps,
   sideEditProps,
 }
 
-export default HeroUnit
+export default MyHeroUnit

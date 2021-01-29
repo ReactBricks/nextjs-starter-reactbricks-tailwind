@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { types } from 'react-bricks'
 
-const NextLink = ({
+const NextLink: types.RenderLocalLink = ({
   href,
-  children,
   className,
   activeClassName,
-  isAdminHeader = true,
+  isAdmin,
+  children
 }) => {
   const router = useRouter()
 
@@ -18,7 +19,7 @@ const NextLink = ({
     anchorClassName = className
   }
 
-  if (isAdminHeader) {
+  if (isAdmin) {
     return (
       <Link href={href}>
         <a className={anchorClassName}>{children}</a>

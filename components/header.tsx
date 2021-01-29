@@ -25,7 +25,7 @@ const Header: React.FC = () => (
           </div>
         </div>
         <Link href="/admin">
-          <a className="py-2 px-5 rounded text-white font-medium bg-blue-500 hover:bg-blue-600 hover:shadow-lg transition duration-200">Edit content</a>
+          <a className="py-2 px-5 rounded text-white font-medium bg-cyan-500 hover:bg-cyan-600 hover:shadow-lg transition duration-200">Edit content</a>
         </Link>
       </div>
     </div>

@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: [
     './pages/**/*.tsx',
@@ -16,34 +18,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: {
-          100: '#ffebef',
-          200: '#ffd6e0',
-          300: '#fdb4c6',
-          400: '#fb83a3',
-          500: '#f65a8e',
-          600: '#d9367f',
-          700: '#b43179',
-          800: '#8f2468',
-          900: '#691f53',
-        },
-        secondary: {
-          100: 'hsl(200, 100%, 94%)',
-          200: 'hsl(200, 95%, 85%)',
-          500: '#1ea7fd',
-          600: '#059dfd',
-        },
-        green: {
-          100: 'hsl(91, 100%, 96%)',
-          200: 'hsl(94, 73%, 87%)',
-          300: 'hsl(95, 60%, 74%)',
-          400: 'hsl(98, 55%, 62%)',
-          500: 'hsl(100, 46%, 50%)',
-          600: 'hsl(103, 48%, 42%)',
-          700: 'hsl(105, 48%, 34%)',
-          800: 'hsl(107, 44%, 27%)',
-          900: 'hsl(108, 42%, 21%)',
-        },
+        cyan: colors.cyan,
       },
       gradientColorStops: {
         ocean1: '#007cf0',
