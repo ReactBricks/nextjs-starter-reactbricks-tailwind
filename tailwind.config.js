@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -8,17 +9,22 @@ module.exports = {
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
-    screens: {
-      xs: '480px',
-      sm: '600px',
-      md: '768px',
-      lg: '900px',
-      xl: '1200px',
-      xxl: '1800px',
-    },
     extend: {
       colors: {
-        cyan: colors.cyan,
+        azure: colors.lightBlue,
+        pink: {
+          100: '#ffebef',
+          200: '#ffd6e0',
+          300: '#fdb4c6',
+          400: '#fb83a3',
+          500: '#f65a8e',
+          600: '#d9367f',
+          700: '#b43179',
+          800: '#8f2468',
+          900: '#691f53',
+        },
+        orange: colors.orange,
+        green: colors.lime,
       },
       gradientColorStops: {
         ocean1: '#007cf0',
@@ -28,34 +34,11 @@ module.exports = {
         sun1: '#ff4d4d',
         sun2: '#f9cb28',
       },
-      margin: {
-        sm: '5.55555%',
-        md: '11.11111%',
-        lg: '16.66667%',
-        xl: '22.22222%',
-      },
       padding: {
         '1/10': '10%',
       },
-      opacity: {
-        10: '0.1',
-      },
       fontFamily: {
-        content: [
-          'Nunito Sans',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          '"Segoe UI"',
-          'Roboto',
-          '"Helvetica Neue"',
-          'Arial',
-          '"Noto Sans"',
-          'sans-serif',
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
-        ],
+        content: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
       },
     },
   },
