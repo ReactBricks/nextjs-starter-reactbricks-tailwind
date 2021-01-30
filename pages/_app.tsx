@@ -20,7 +20,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     ...config,
     isDarkColorMode: colorMode === 'dark',
     toggleColorMode,
-    contentClassName: `antialiased ${colorMode} ${
+    contentClassName: `antialiased font-content ${colorMode} ${
       colorMode === 'dark' ? 'bg-gray-900' : 'bg-white'
     }`,
   }
