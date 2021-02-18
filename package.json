@@ -2,7 +2,7 @@
   "name": "nextjs-starter-reactbricks",
   "private": true,
   "license": "MIT",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Matteo Frana <f2@f2.net>",
   "scripts": {
     "dev": "next dev",
@@ -10,18 +10,18 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0.5",
+    "next": "10.0.7",
     "react": "17.0.1",
     "react-bricks": "^2.0.0",
-    "react-bricks-ui": "^0.1.5",
+    "react-bricks-ui": "^0.1.10",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "@types/node": "^14.14.22",
-    "@types/react": "^17.0.0",
-    "autoprefixer": "^10.2.3",
-    "postcss": "^8.2.4",
-    "tailwindcss": "^2.0.2",
-    "typescript": "^4.1.3"
+    "@types/node": "^14.14.28",
+    "@types/react": "^17.0.2",
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3",
+    "typescript": "^4.1.5"
   }
 }
