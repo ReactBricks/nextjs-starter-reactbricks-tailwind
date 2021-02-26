@@ -5,6 +5,7 @@ module.exports = {
   purge: [
     './pages/**/*.tsx',
     './components/**/*.tsx',
+    './react-bricks/**/*.tsx',
     './node_modules/react-bricks-ui/dist/*.js',
   ],
   darkMode: 'class', // or 'media' or 'class'
