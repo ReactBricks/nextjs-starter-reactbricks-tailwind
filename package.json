@@ -2,7 +2,7 @@
   "name": "nextjs-starter-reactbricks",
   "private": true,
   "license": "MIT",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Matteo Frana <f2@f2.net>",
   "scripts": {
     "dev": "next dev",
