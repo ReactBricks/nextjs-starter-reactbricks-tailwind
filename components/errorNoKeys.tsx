@@ -21,7 +21,7 @@ const ErrorNoKeys = () => {
       <p className="mb-2">
         Please create a{' '}
         <code className="text-sm text-black bg-gray-100 px-1 py-1 rounded">
-          .local.env
+          .env.local
         </code>{' '}
         file with:
       </p>
