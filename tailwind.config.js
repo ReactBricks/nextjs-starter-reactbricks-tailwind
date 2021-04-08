@@ -26,6 +26,7 @@ module.exports = {
         },
         orange: colors.orange,
         green: colors.lime,
+        cyan: colors.cyan,
       },
       gradientColorStops: {
         ocean1: '#007cf0',
