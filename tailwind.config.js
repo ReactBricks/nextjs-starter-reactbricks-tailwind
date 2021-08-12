@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        azure: colors.lightBlue,
+        azure: colors.sky,
         pink: {
           100: '#ffebef',
           200: '#ffd6e0',
