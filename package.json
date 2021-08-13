@@ -10,7 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^11.0.1",
+    "next": "^11.1.0",
     "react": "^17.0.2",
     "react-bricks": "^2.3.16",
     "react-bricks-ui": "^0.1.15",
