@@ -2,7 +2,10 @@ import { types } from 'react-bricks'
 import { website } from 'react-bricks-ui'
 import HeroUnit from './MyHeroUnit'
 
-// React Bricks UI + Custom HeroUnit brick
-const bricks: types.Brick<any>[] = [...website, HeroUnit]
+const bricks: types.Brick<any>[] = [
+  ...website, // React Bricks UI
+  HeroUnit, // Example custom brick
+  // Put here your other bricks...
+]
 
 export default bricks
