@@ -4,9 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-a  {
+.content a {
   color: #1ea7fd;
 }
-a:hover {
+.content a:hover {
   color: #0297f5;
 }
