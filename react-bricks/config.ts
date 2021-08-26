@@ -11,7 +11,7 @@ const config: types.ReactBricksConfig = {
   pageTypes,
   bricks,
   logo: '/logo.svg',
-  //contentClassName: '',
+  contentClassName: 'content',
   renderLocalLink: NextLink,
   navigate: (path: string) => Router.push(path),
   loginPath: '/admin',

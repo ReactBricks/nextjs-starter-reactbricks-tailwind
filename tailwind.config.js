@@ -8,7 +8,7 @@ module.exports = {
     './react-bricks/**/*.tsx',
     './node_modules/react-bricks-ui/dist/*.js',
   ],
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
