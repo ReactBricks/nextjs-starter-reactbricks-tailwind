@@ -10,18 +10,18 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^11.1.0",
+    "next": "^11.1.2",
     "react": "^17.0.2",
-    "react-bricks": "^2.3.16",
+    "react-bricks": "^3.0.0-alpha.14",
     "react-bricks-ui": "^0.1.17",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@types/node": "^16.7.2",
-    "@types/react": "^17.0.19",
-    "autoprefixer": "^10.3.3",
-    "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.7",
-    "typescript": "^4.4.2"
+    "@types/node": "^16.10.2",
+    "@types/react": "^17.0.26",
+    "autoprefixer": "^10.3.6",
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.2.16",
+    "typescript": "^4.4.3"
   }
 }
