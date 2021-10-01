@@ -7,7 +7,7 @@ import {
   types,
 } from 'react-bricks'
 import Head from 'next/head'
-import { GetStaticProps, GetStaticPaths } from 'next'
+import { GetStaticProps } from 'next'
 
 import config from '../react-bricks/config'
 import Layout from '../components/layout'
