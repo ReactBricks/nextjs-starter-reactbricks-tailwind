@@ -60,7 +60,7 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
 }
 
 //=============================
-// Block Schema
+// Brick Schema
 //=============================
 MyHeroUnit.schema = {
   name: 'my-hero-unit',
