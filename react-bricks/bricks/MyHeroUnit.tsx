@@ -23,7 +23,7 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
       }`}
     >
       <div className="flex flex-col items-center">
-        <Image propName="icon" alt="Icon" maxWidth={400} aspectRatio={1} imageClassName="w-20 mb-5" />
+        <Image propName="icon" alt="Icon" maxWidth={80} aspectRatio={1} imageClassName="w-20 mb-5" />
         <Text
           renderBlock={(props) => (
             <h1 className="text-3xl sm:text-4xl text-center font-black text-gray-900 dark:text-white leading-tight mb-3">
