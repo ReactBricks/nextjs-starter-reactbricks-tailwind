@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { types } from 'react-bricks'
+import { types } from 'react-bricks/frontend'
 
 const NextLink: types.RenderLocalLink = ({
   href,

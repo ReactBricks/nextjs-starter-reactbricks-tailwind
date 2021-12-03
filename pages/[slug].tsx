@@ -6,7 +6,7 @@ import {
   fetchPages,
   cleanPage,
   types,
-} from 'react-bricks'
+} from 'react-bricks/frontend'
 import Head from 'next/head'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
