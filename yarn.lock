@@ -2248,10 +2248,10 @@ rc-util@^5.0.1:
     react-is "^16.12.0"
     shallowequal "^1.1.0"
 
-react-bricks-ui@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/react-bricks-ui/-/react-bricks-ui-0.3.1.tgz#a3a78cbe07921b454d3def33bfccd969bbb7fd68"
-  integrity sha512-WwHVg83srDnA3iycy3D30fm6yz8twK3PQxk7d7PrjHj8BDBOywC7JFQOxgzLTQUud7sin/vYNm/6D0ZZfS0MGw==
+react-bricks-ui@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/react-bricks-ui/-/react-bricks-ui-0.3.2.tgz#9e5d216d882a8270407828504de5b4904e9c916c"
+  integrity sha512-n30t4T2INyLTyePBxUUPu2qXzysS+fjx1fHo5bWREhlozhGy2g7VcYuN3a28uDbS2Gblw9btB+U7ijdhEd41Mg==
   dependencies:
     classnames "^2.3.1"
     email-validator "^2.0.4"
@@ -2263,10 +2263,10 @@ react-bricks-ui@^0.3.1:
     react-leaflet "^3.2.1"
     react-simple-code-editor "^0.11.0"
 
-react-bricks@^3.1.6:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-3.1.6.tgz#6d230fc444f030b7e6f89ffb6e1eb1e495cc3762"
-  integrity sha512-LCpXCuGc3FfKC7dNRd9+Ly/Q4tT1fE+PT21KWRHzqvzcoTOgES++WTQxPeCMMDynAe9Z/VbuAvccnQP8kzlPhg==
+react-bricks@^3.1.8:
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-3.1.8.tgz#4763af5a97f6a83256e31a75e8c5effba36af197"
+  integrity sha512-nfQEMdxmfTDhGtb8gXPpO7BHp7bNUD+UBvRTwEpUwUSmwcZ8GwQKnnB1eHdzdemMSiJbtmXq70pe9IVcTtMayQ==
   dependencies:
     "@tippyjs/react" "^4.2.5"
     axios "^0.23.0"
