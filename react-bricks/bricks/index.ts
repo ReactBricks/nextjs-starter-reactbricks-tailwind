@@ -1,5 +1,5 @@
 import { types } from 'react-bricks/frontend'
-import { website } from 'react-bricks-ui'
+import website from 'react-bricks-ui/website'
 import HeroUnit from './MyHeroUnit'
 
 const bricks: types.Brick<any>[] = [

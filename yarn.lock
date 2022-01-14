@@ -2137,6 +2137,16 @@ pretty-hrtime@^1.0.3:
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
 
+prism-theme-night-owl@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/prism-theme-night-owl/-/prism-theme-night-owl-1.4.0.tgz#af8a215ba75c081e22e74be41661dc40d7ad0c34"
+  integrity sha512-1N1GVbVorGd5t1Vw76yL/3rhqdiCpDrJg26Is+jGeMV7qiIMZL+bC7Mjx7HMMuVKZoi+2nWSbU5IutBYNy9tiQ==
+
+prismjs@^1.26.0:
+  version "1.26.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.26.0.tgz#16881b594828bb6b45296083a8cbab46b0accd47"
+  integrity sha512-HUoH9C5Z3jKkl3UunCyiD5jwk0+Hz0fIgQ2nbwU2Oo/ceuTAQAg+pPVnfdt2TJWRVLcxKh9iuoYDUSc8clb5UQ==
+
 process@0.11.10:
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
@@ -2248,10 +2258,10 @@ rc-util@^5.0.1:
     react-is "^16.12.0"
     shallowequal "^1.1.0"
 
-react-bricks-ui@^0.3.17:
-  version "0.3.17"
-  resolved "https://registry.yarnpkg.com/react-bricks-ui/-/react-bricks-ui-0.3.17.tgz#309dd1c9a038c521b972a7ff9fbc16e3046dc51d"
-  integrity sha512-F+guqqQBEHitfaG/rKjbAXeHSBIf+KRBu/PKqmCaMGFD4PnFFdzssFsyNQqsaqqa6FwtOhjSEoAXYwmR67H25A==
+react-bricks-ui@^0.3.20:
+  version "0.3.20"
+  resolved "https://registry.yarnpkg.com/react-bricks-ui/-/react-bricks-ui-0.3.20.tgz#55e5bf329414d27c98ddd5ba40eab4d73a485b61"
+  integrity sha512-W90Vsm0XY+QZti7oDmcKN/gteDLWUQT6EKK7wPZx8MxkXOs47LwPgIP4duUrS6a6Dp7K3BgMHsVkZa+MzGH7Vw==
   dependencies:
     classnames "^2.3.1"
     dayjs "^1.10.7"
