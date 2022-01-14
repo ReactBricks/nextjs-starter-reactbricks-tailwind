@@ -3,7 +3,7 @@ import { ReactBricks } from 'react-bricks/frontend'
 import type { AppProps } from 'next/app'
 import config from '../react-bricks/config'
 
-import '../css/style.css'
+import '../css/tailwind.css'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   // Color Mode Management
