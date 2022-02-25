@@ -10,7 +10,10 @@ const config: types.ReactBricksConfig = {
   apiKey: process.env.API_KEY,
   pageTypes,
   bricks,
-  logo: '/logo.svg',
+  domain: 'https://ReactBricks.com',
+  title: 'React Bricks',
+  logo: '/react-bricks-logo.svg',
+  icon: '/react-bricks-icon.svg',
   // contentClassName: 'content', // Defined dynamically
   // isDarkColorMode: ...,        // in _app.tsx
   // toggleColorMode: ...,        // to manage Dark Mode

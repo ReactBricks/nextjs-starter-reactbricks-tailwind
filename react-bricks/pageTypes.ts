@@ -5,7 +5,7 @@ const pageTypes: types.IPageType[] = [
     name: 'page',
     pluralName: 'pages',
     defaultLocked: false,
-    defaultStatus: types.PageStatus.Published,
+    defaultStatus: types.PageStatus.Draft,
     getDefaultContent: () => [],
   },
 ]

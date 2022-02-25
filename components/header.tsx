@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import config from '../react-bricks/config'
 
 const Header: React.FC = () => (
   <header className="bg-white sm:h-20 py-5 border-b sm:sticky top-0">
@@ -7,7 +8,7 @@ const Header: React.FC = () => (
       <div className="w-full flex flex-col sm:flex-row justify-center sm:justify-between items-center">
         <div className="flex flex-col sm:flex-row items-center mb-4 sm:mb-0">
           <img
-            src="/react-bricks-logo.svg"
+            src={config.logo}
             className="w-48"
             alt="React Bricks"
           />
@@ -25,6 +26,8 @@ const Header: React.FC = () => (
             Edit content
           </a>
         </Link>
+
+        {/* Should Be Color Mode Toggle For Users either in settings or navbar?? */}
       </div>
     </div>
   </header>

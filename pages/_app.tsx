@@ -10,6 +10,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   const savedColorMode =
     typeof window === 'undefined' ? '' : localStorage.getItem('color-mode')
   const [colorMode, setColorMode] = useState(savedColorMode || 'light')
+
   const toggleColorMode = () => {
     const newColorMode = colorMode === 'light' ? 'dark' : 'light'
     setColorMode(newColorMode)
@@ -18,8 +19,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   const reactBricksConfig = {
     ...config,
-    isDarkColorMode: colorMode === 'dark',
     toggleColorMode,
+    isDarkColorMode: colorMode === 'light',
     contentClassName: `antialiased font-content ${colorMode} ${
       colorMode === 'dark' ? 'bg-gray-900' : 'bg-white'
     }`,
