@@ -14,7 +14,7 @@
     "prism-theme-night-owl": "^1.4.0",
     "prismjs": "^1.27.0",
     "react": "^17.0.2",
-    "react-bricks": "^3.2.13",
+    "react-bricks": "^3.2.14",
     "react-bricks-ui": "^0.3.20",
     "react-dom": "^17.0.2"
   },
