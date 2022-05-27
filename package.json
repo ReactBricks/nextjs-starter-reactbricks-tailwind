@@ -15,7 +15,7 @@
     "prismjs": "^1.28.0",
     "react": "^18.1.0",
     "react-bricks": "^3.2.25",
-    "react-bricks-ui": "^0.4.0",
+    "react-bricks-ui": "^0.4.1",
     "react-dom": "^18.1.0",
     "react-slick": "^0.29.0"
   },

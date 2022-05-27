@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 import Header from './header'
 import Footer from './footer'
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+  children?: ReactNode
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col h-screen justify-between font-content antialiased">
       <Header />
